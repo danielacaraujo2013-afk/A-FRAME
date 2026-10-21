@@ -7,7 +7,6 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.0/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <!-- AQUI: Adicionas o mindar-image dentro da a-scene -->
     <a-scene
       mindar-image="imageTargetSrc: ./targets.mind;"
       color-space="sRGB"
@@ -19,9 +18,15 @@
 
       <!-- Objeto 3D que aparece ao detetar a imagem alvo -->
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-box color="red" position="0 0 0" scale="0.5 0.5 0.5"></a-box>
+        <a-cylinder
+          color="blue"
+          position="0 0 0"
+          radius="0.3"
+          height="0.5"
+        ></a-cylinder>
       </a-entity>
     </a-scene>
   </body>
 </html>
+
 
